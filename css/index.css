@@ -1,18 +1,45 @@
-h1{
-    color:brown;
+.logo{
+  position: relative; /* 글자를 이미지 위에 올리기 위해 필요 */
+  width: 180px;
+  height: 130px;
+  margin-top: 20px;  /*위에 여백*/
+  margin-left: 30px; /*왼쪽 여백*/
+  margin-bottom: 30px; /*위에 여백*/
+}
+
+
+
+.logo-photo {
+  width: 180px;       /* 이미지 가로 크기 */
+  height: 130px;      /* 이미지 세로 크기 */
+  object-fit: cover;  /* 이미지 비율 유지하면서 꽉 채우기 */
+  opacity: 0.5;       /* 이미지 반투명 */
+  border-radius: 10px; /* 모서리 둥글게 */
+}
+
+
+.logo h1 {
+  position: absolute;          /* 이미지 위에 위치 */
+  top: 50%;                    /* 수직 중앙 */
+  left: 50%;                   /* 수평 중앙 */
+  transform: translate(-50%, -90%); /* 정확히 가운데 */
+  color: black;
+  font-family: 궁서체;
+  z-index: 2;                  /* 이미지 위에 표시 */
 }
 
 .btn {
   display: inline-block;
-  padding: 10px 20px;
-  background-color: #4CAF50; /* 초록색 배경 */
-  color: white; /* 글자색 흰색 */
+  padding: 50px 100px 50px 100px;
+  background-color: white; 
+  color: black; /* 글자 검은색 */
   text-decoration: none; /* 밑줄 제거 */
   border-radius: 5px; /* 모서리 둥글게 */
   font-weight: bold;
   transition: background-color 0.3s;
+  font-size: 20px;
 }
 
 .btn:hover {
-  background-color: #45a049; /* 마우스 올리면 살짝 어둡게 */
+  text-decoration:underline /* 마우스 올리면 밑줄긋기 효과 */
 }
